@@ -1,0 +1,44 @@
+
+<div class="row">
+    <div class="collapse navbar-collapse" id="navbarmidle">
+        <div class="searchtxt">
+            <h1>Filtered by: {{carFilter}}</h1>
+        </div>
+            <div class="col-sm-4">
+                <input type="text" placeholder="Enter Keyword" [(ngModel)]='carFilter'>
+            </div>
+        <div class="col-sm-4">
+        <h2>{{raitingText}}</h2>
+    </div>
+</div>
+</div>
+<br>
+<!-- <div class="row"> -->
+<div >
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Car Name</th>
+                <th>No of Km</th>
+                <th>Price ($)</th>
+                <th>Car Image</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of filteredCars">
+                <td customUnderline>{{car.carId}}</td>
+                <td customUnderline>{{car.carName | uselessPipe:"Model name: "}}</td>
+                <td customUnderline>{{car.carNoOfKm}}</td>
+                <td customUnderline>{{car.carPrice | currency:'EUR':'symbol':'4.2-2'}}</td>
+                <td><img [src]='car.imageUrl'
+                         [title]='car.carName'
+                         [style.width.px]='imageWidth'></td>
+                <td><g-star 
+                            (ratingClicked) = 'onRaitingClicked($event)'></g-star></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- </div> -->
