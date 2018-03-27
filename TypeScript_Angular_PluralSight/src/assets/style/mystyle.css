@@ -153,7 +153,7 @@ padding-left: 5%;
 }
 @font-face {
   font-family: "BebasNeue Regular";
-    src: url(../source/fonts/BebasNeue-Regular.otf) format("truetype");
+    src: url(../source/fonts/BebasNeue-Regular.otf) format("otf");
 }
   #navbarontop > li > a {
   	font-family: 'BebasNeue Regular';
@@ -343,7 +343,7 @@ float: right;
 
 @font-face{
 	font-family: "OpenSans Semibold";
-	src: url(../source/fonts/OpenSans-Semibold.ttf) format("truetype");
+	src: url(../source/fonts/OpenSans-Semibold.ttf) format("ttf");
 
 }
 .carousel-caption{

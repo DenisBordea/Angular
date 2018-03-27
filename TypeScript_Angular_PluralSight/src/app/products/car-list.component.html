@@ -36,7 +36,7 @@
                          [title]='car.carName'
                          [style.width.px]='imageWidth'></td>
                 <td><g-star 
-                            (ratingClicked) = 'onRaitingClicked($event)'></g-star></td>
+                            [rating]='car.starRating' (ratingClicked) = 'onRaitingClicked($event)'></g-star></td>
             </tr>
         </tbody>
     </table>

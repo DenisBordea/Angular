@@ -81,7 +81,7 @@
     ],
     "prefer-const": true,
     "quotemark": [
-      true,
+      false,
       "single"
     ],
     "radix": true,
@@ -123,7 +123,7 @@
     "component-selector": [
       true,
       "element",
-      "pm",
+      "",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
